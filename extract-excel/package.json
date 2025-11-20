@@ -1,0 +1,30 @@
+{
+  "name": "extract-excel-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP stdio server for extracting and creating Excel files using TypeScript and ExcelJS",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "extract-excel-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "exceljs": "^4.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=23.3.0"
+  },
+  "license": "MIT"
+}
