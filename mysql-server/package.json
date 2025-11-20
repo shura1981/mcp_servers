@@ -1,0 +1,28 @@
+{
+  "name": "mysql-server",
+  "version": "0.1.0",
+  "description": "MCP server for MySQL/MariaDB interaction",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc -w & node --watch build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mysql",
+    "mariadb",
+    "database"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
